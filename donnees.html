@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Données</title>
+</head>
+
+<body>
+    <h1>Chanteurs français par genre</h1>
+    <h2>Exemple avec WikiData</h2>
+    <iframe style="width: 80vw; height: 50vh; border: none;"
+        src="https://query.wikidata.org/embed.html#SELECT%0A%20%20%3Fgenre%0A%20%20%3FgenreLabel%0A%20%20(COUNT(DISTINCT%20%3Fchanteur)%20AS%20%3FnombreDeChanteurs)%0AWHERE%20%7B%0A%20%20%3Fchanteur%20wdt%3AP106%20wd%3AQ177220%3B%20%20%20%23%20singer%0A%20%20%20%20%20%20%20%20%20%20%20%20wdt%3AP27%20wd%3AQ142%3B%20%20%20%20%20%20%20%20%23%20France%0A%20%20%20%20%20%20%20%20%20%20%20%20wdt%3AP136%20%3Fgenre.%20%20%20%20%20%20%20%20%23%20genre%0A%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%0A%20%20%20%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%2Cen%22.%0A%20%20%7D%0A%7D%0AGROUP%20BY%20%3Fgenre%20%3FgenreLabel%0AHAVING%20(COUNT(DISTINCT%20%3Fchanteur)%20%3E%3D%2010)%0AORDER%20BY%20DESC(%3FnombreDeChanteurs)%0A"
+        referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+    <h2>Exemple avec RawGraphs</h2>
+     <img src="viz.svg" alt="Chanteurs par genre">
+</body>
+
+</html>
