@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Exercice 2</h1>
+    <h2>Visualisation de texte : paroles de La Vie en Rose</h2>
+    <iframe style="width: 80vw; height: 50vh; border: none;"
+        src="https://www.jasondavies.com/wordtree/?source=4b60fd2d11e3fab08b72f7bca3b6ab65&prefix=vie"
+        frameborder="0"></iframe>
+
+    <h2>Visualisation d'images : les affiches de WikiData</h2>
+    <iframe style="width: 80vw; height: 50vh; border: none;"
+        src="https://query.wikidata.org/embed.html#%23defaultView%3ATimeline%0ASELECT%20%3Fposter%20%3FposterLabel%20%3Fdate%20%3Fimage%20WHERE%20%7B%0A%20%20%3Fposter%20wdt%3AP31%20wd%3AQ429785%3B%0A%20%20%20%20wdt%3AP577%20%3Fdate%3B%0A%20%20%20%20wdt%3AP18%20%3Fimage.%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22fr%2Cen%22.%20%7D%0A%7D%0AORDER%20BY%20(%3Fdate)"
+        referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+</body>
+
+</html>
