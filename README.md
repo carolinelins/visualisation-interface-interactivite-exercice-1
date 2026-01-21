@@ -8,5 +8,5 @@ Ce dépôt regroupe les exercices réalisés dans le cadre de la discipline **Vi
 
 ## Exercices
 
-- [Exercice 1](https://carolinelins.github.io/DataViz/)  
-- [Exercice 2](https://carolinelins.github.io/DataViz/exercice2.html)
+- [Exercice 1](https://carolinelins.github.io/visualisation-interface-interactivite-exercice-1/)  
+- [Exercice 2](https://carolinelins.github.io/visualisation-interface-interactivite-exercice-1/exercice2.html)
